@@ -16,7 +16,10 @@ pyenv local 3.13.1
 # Execute Poetry
 poetry new fast_zero
 poetry env use 3.13.1 
-poetry install    
+poetry install   
+
+# Install depedency
+poetry add fastapi
 ```
 
 
