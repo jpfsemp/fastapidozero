@@ -19,7 +19,34 @@ poetry env use 3.13.1
 poetry install   
 
 # Install depedency
-poetry add fastapi
+poetry add "fastapi[standard]"
+
+# Hello
+# interativo
+# read_root()
+python -i fast_zero/app.py
+
+# Habilita ambiente virtual do poetry (venv)
+poetry shell
+
+# Executar o fast api
+fastapi dev fast_zero/app.py
+
+# Ruff - linter
+poetry add --group dev ruff
+ruff check .
+ruff check . --fix
+ruff format .
+
+# Pytest - test e coverage
+poetry add --group dev pytest pytest-cov
+pytest
+pytest --cov=fast_zero -vv
+coverage html
+
+# Taskipy: cria um alias para comandos
+poetry add --group dev taskipy
+task run
 ```
 
 
