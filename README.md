@@ -1,8 +1,11 @@
 # Fast API do Zero
 
-## Instalação
 
-```script
+## [Aula-01 - Configurando o Ambiente de Desenvolvimento](https://fastapidozero.dunossauro.com/)
+
+### Instalação
+
+```shell
 # Install Poetry
 pip install pipx
 pipx install poetr
@@ -48,6 +51,9 @@ coverage html
 poetry add --group dev taskipy
 task run
 ```
+## [Aula-02 - Introdução ao desenvolvimento WEB](https://fastapidozero.dunossauro.com/02/)
 
 
-Curso do Dunossauro: https://fastapidozero.dunossauro.com/
+## Referências
+
+- [FastAPI do Zero](https://fastapidozero.dunossauro.com/)
