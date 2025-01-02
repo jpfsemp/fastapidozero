@@ -53,7 +53,23 @@ task run
 ```
 ## [Aula-02 - Introdução ao desenvolvimento WEB](https://fastapidozero.dunossauro.com/02/)
 
+- Uvicorn: (ASGI - Asynchronous Server Gateway Interface ) servidor de aplicação
 
+```shell
+uvicorn fast_zero.app:app
+
+# Modo de rede
+fastapi dev fast_zero/app.py --host 0.0.0.0 --port 8001
+```
+
+```python
+# show my ip
+import socket
+
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.connect(("8.8.8.8",80))
+s.getsockname()[0]
+```
 ## Referências
 
 - [FastAPI do Zero](https://fastapidozero.dunossauro.com/)
